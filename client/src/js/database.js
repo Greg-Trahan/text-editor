@@ -12,9 +12,6 @@ const initdb = async () =>
     },
   });
 
-/*
-  We need to add some code below which will take updated content and save it to IndexedDB.
-*/
 export const putDb = async (content) => {
   const jateDb = await openDB("IndexedDB", 1);
   const tx = jateDb.transaction("IndexedDB", "readwrite");
